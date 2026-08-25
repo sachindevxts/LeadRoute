@@ -16,7 +16,7 @@ import {
 import { ROUTES } from './route.constants';
 
 export const NAVIGATION_LABELS = {
-  APP_NAME: 'LearnRoute',
+  APP_NAME: 'LeadRoute',
   APP_TAGLINE: 'INTENT / AUTOMATION',
   MAIN: 'MAIN',
   OUTBOUND: 'OUTBOUND',
@@ -54,7 +54,12 @@ export const SIDEBAR_GROUPS: SidebarGroup[] = [
   {
     label: NAVIGATION_LABELS.MAIN,
     items: [
-      { key: 'dashboard', path: ROUTES.DASHBOARD, label: NAVIGATION_LABELS.DASHBOARD, icon: ListChecks },
+      {
+        key: 'dashboard',
+        path: ROUTES.DASHBOARD,
+        label: NAVIGATION_LABELS.DASHBOARD,
+        icon: ListChecks,
+      },
       {
         key: 'verification',
         path: ROUTES.VERIFICATION_QUEUE,
@@ -62,24 +67,59 @@ export const SIDEBAR_GROUPS: SidebarGroup[] = [
         icon: ClipboardCheck,
         badge: '11',
       },
-      { key: 'approvals', path: ROUTES.APPROVALS, label: NAVIGATION_LABELS.APPROVALS, icon: ShieldCheck },
+      {
+        key: 'approvals',
+        path: ROUTES.APPROVALS,
+        label: NAVIGATION_LABELS.APPROVALS,
+        icon: ShieldCheck,
+      },
       { key: 'audit', path: ROUTES.AUDIT_LOG, label: NAVIGATION_LABELS.AUDIT_LOG, icon: Clock3 },
     ],
   },
   {
     label: NAVIGATION_LABELS.OUTBOUND,
     items: [
-      { key: 'performance', path: ROUTES.PERFORMANCE, label: NAVIGATION_LABELS.PERFORMANCE, icon: BarChart3 },
-      { key: 'campaigns', path: ROUTES.CAMPAIGNS, label: NAVIGATION_LABELS.CAMPAIGNS, icon: Megaphone },
-      { key: 'sequence', path: ROUTES.SEQUENCE_BUILDER, label: NAVIGATION_LABELS.SEQUENCE_BUILDER, icon: Link2 },
-      { key: 'templates', path: ROUTES.TEMPLATES, label: NAVIGATION_LABELS.TEMPLATES, icon: FileText },
-      { key: 'active', path: ROUTES.ACTIVE_SEQUENCES, label: NAVIGATION_LABELS.ACTIVE_SEQUENCES, icon: Send },
+      {
+        key: 'performance',
+        path: ROUTES.PERFORMANCE,
+        label: NAVIGATION_LABELS.PERFORMANCE,
+        icon: BarChart3,
+      },
+      {
+        key: 'campaigns',
+        path: ROUTES.CAMPAIGNS,
+        label: NAVIGATION_LABELS.CAMPAIGNS,
+        icon: Megaphone,
+      },
+      {
+        key: 'sequence',
+        path: ROUTES.SEQUENCE_BUILDER,
+        label: NAVIGATION_LABELS.SEQUENCE_BUILDER,
+        icon: Link2,
+      },
+      {
+        key: 'templates',
+        path: ROUTES.TEMPLATES,
+        label: NAVIGATION_LABELS.TEMPLATES,
+        icon: FileText,
+      },
+      {
+        key: 'active',
+        path: ROUTES.ACTIVE_SEQUENCES,
+        label: NAVIGATION_LABELS.ACTIVE_SEQUENCES,
+        icon: Send,
+      },
     ],
   },
   {
     label: NAVIGATION_LABELS.INFRASTRUCTURE,
     items: [
-      { key: 'inboxes', path: ROUTES.CONNECTED_INBOXES, label: NAVIGATION_LABELS.CONNECTED_INBOXES, icon: Inbox },
+      {
+        key: 'inboxes',
+        path: ROUTES.CONNECTED_INBOXES,
+        label: NAVIGATION_LABELS.CONNECTED_INBOXES,
+        icon: Inbox,
+      },
       { key: 'hub', path: ROUTES.INBOX_HUB, label: NAVIGATION_LABELS.INBOX_HUB, icon: Mail },
       { key: 'settings', path: ROUTES.SETTINGS, label: NAVIGATION_LABELS.SETTINGS, icon: Settings },
     ],
